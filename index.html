@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" CONTENT="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                
+                <li><a href="Resume_Nicholas DIPuccio.docx (9).pdf" download>Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/nicholas-dipuccio-a06880274/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/NikD-7" target="_blank">GitHub</a></li>
+            
+               
+            </ul>
+           
+        </nav>
+        <div class="header-text">
+            <p>Software Engineering</p>
+            <h1>Hi, I'm <span>Nicholas DiPuccio</span> <br>from Chandler Arizona!</h1>
+        </div>
+    </div>
+</div>
+<!-----about----->
+<div id="about">
+    <div class="containter">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p> I am a highly driven computer science student with growing expertise in Python, JS, and AWS, actively seeking an internship to contribute passion and skills in driving technological innovation. I am currently pursuing an AS in Computer Science at Chandler-Gilbert Community College, and planning to transfer for a BS in Computer Science. I am engaged in Math Club activities, tutoring college math and algorithm classes. I demonstrated leadership as the team captain of the Gila River Football team while receiving multiple Division 1 scholarship offers for both athletic and academic achievements.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Software Development</span><br>Java, Python, JS, Assembly, HTML, CSS</li>
+                    <li><span>Tools</span><br>Eclipse, AWS, Git, VS, Windows, Excel, Linux</li>
+                    <li><span>Hobbies</span><br>Day Trading, Fitness, DJ</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Advanced Hearing Group Intern</span><br>Helped the company convert over 5000 medical files from paper to a digital system. Implemented an OCR system for efficient file and data input. Troubleshot server issues and integrated Spanish OCR to optimize file scanning and future Spanish file entry.</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-2024</span><br>AS in Computer Science at Chandler-Gilbert CC</li>
+                    <li><span>2018-2022</span><br>Seton Catholic Preparatory</li>
+    
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+</script>
+
+</body>
+</html>
